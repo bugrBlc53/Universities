@@ -7,15 +7,26 @@
 
 import Foundation
 
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
+
+struct ClientModel {
+    var urlString: String
+    var parameters: [String: Any]?
+    var method: HTTPMethod? = .get
+}
+
 class Client {
-    func request<T: Decodable>(urlString: String, parameters: [String: Any]?, expecting: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
-        guard let url = URL(string: urlString) else { return }
+    func request<T: Decodable>(clientModel: ClientModel, expecting: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
+        guard let url = URL(string: clientModel.urlString) else { return }
         
         var request = URLRequest(url: url)
         
-//        request.httpMethod = "POST"
+        request.httpMethod = clientModel.method?.rawValue
         
-        if let parameters = parameters {
+        if let parameters = clientModel.parameters {
             request.httpBody = parameters.percentEncoded()
         }
         

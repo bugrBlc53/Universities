@@ -11,7 +11,9 @@ final class UniversitiesViewModel: ObservableObject {
     @Published var universities = [University]()
     
     func getUniversities() {
-        Client().request(urlString: "http://universities.hipolabs.com/search?country=turkey", parameters: nil, expecting: [University].self) { data in
+        let clientModel = ClientModel(urlString: "http://universities.hipolabs.com/search?country=turkey")
+        
+        Client().request(clientModel: clientModel, expecting: [University].self) { data in
             switch data {
             case .success(let universities):
                 print(universities)

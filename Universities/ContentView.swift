@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = UniversitiesViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(viewModel.universities.first?.name ?? "---")
         }
+        .onAppear(perform: {
+            viewModel.getUniversities()
+        })
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

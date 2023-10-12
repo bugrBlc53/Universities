@@ -14,6 +14,9 @@
 		06BE29572AD72AFC00E4BC3B /* UniversitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29562AD72AFC00E4BC3B /* UniversitiesTests.swift */; };
 		06BE29612AD72AFC00E4BC3B /* UniversitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29602AD72AFC00E4BC3B /* UniversitiesUITests.swift */; };
 		06BE29632AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */; };
+		06BE29722AD72C9A00E4BC3B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29712AD72C9A00E4BC3B /* Client.swift */; };
+		06BE29782AD8A66C00E4BC3B /* UniversitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */; };
+		06BE297B2AD8A82C00E4BC3B /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE297A2AD8A82C00E4BC3B /* University.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		06BE295C2AD72AFC00E4BC3B /* UniversitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BE29602AD72AFC00E4BC3B /* UniversitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesUITests.swift; sourceTree = "<group>"; };
 		06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06BE29712AD72C9A00E4BC3B /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		06BE29762AD739B400E4BC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesViewModel.swift; sourceTree = "<group>"; };
+		06BE297A2AD8A82C00E4BC3B /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,11 @@
 		06BE29442AD72AFB00E4BC3B /* Universities */ = {
 			isa = PBXGroup;
 			children = (
+				06BE29762AD739B400E4BC3B /* Info.plist */,
+				06BE29702AD72C5400E4BC3B /* Network */,
 				06BE29452AD72AFB00E4BC3B /* UniversitiesApp.swift */,
 				06BE29472AD72AFB00E4BC3B /* ContentView.swift */,
+				06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */,
 				06BE29492AD72AFC00E4BC3B /* Assets.xcassets */,
 				06BE294B2AD72AFC00E4BC3B /* Preview Content */,
 			);
@@ -125,6 +135,31 @@
 				06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */,
 			);
 			path = UniversitiesUITests;
+			sourceTree = "<group>";
+		};
+		06BE29702AD72C5400E4BC3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29792AD8A81A00E4BC3B /* Models */,
+				06BE29732AD7328100E4BC3B /* APIs */,
+				06BE29712AD72C9A00E4BC3B /* Client.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		06BE29732AD7328100E4BC3B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		06BE29792AD8A81A00E4BC3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06BE297A2AD8A82C00E4BC3B /* University.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,9 @@
 			files = (
 				06BE29482AD72AFB00E4BC3B /* ContentView.swift in Sources */,
 				06BE29462AD72AFB00E4BC3B /* UniversitiesApp.swift in Sources */,
+				06BE29782AD8A66C00E4BC3B /* UniversitiesViewModel.swift in Sources */,
+				06BE29722AD72C9A00E4BC3B /* Client.swift in Sources */,
+				06BE297B2AD8A82C00E4BC3B /* University.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +458,7 @@
 				DEVELOPMENT_TEAM = V3Y6YC43ZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Universities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +488,7 @@
 				DEVELOPMENT_TEAM = V3Y6YC43ZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Universities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

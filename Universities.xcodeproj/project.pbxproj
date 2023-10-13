@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		06BE29462AD72AFB00E4BC3B /* UniversitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29452AD72AFB00E4BC3B /* UniversitiesApp.swift */; };
-		06BE29482AD72AFB00E4BC3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29472AD72AFB00E4BC3B /* ContentView.swift */; };
+		06BE29482AD72AFB00E4BC3B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29472AD72AFB00E4BC3B /* ListView.swift */; };
 		06BE294A2AD72AFC00E4BC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BE29492AD72AFC00E4BC3B /* Assets.xcassets */; };
 		06BE294D2AD72AFC00E4BC3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BE294C2AD72AFC00E4BC3B /* Preview Assets.xcassets */; };
 		06BE29572AD72AFC00E4BC3B /* UniversitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29562AD72AFC00E4BC3B /* UniversitiesTests.swift */; };
 		06BE29612AD72AFC00E4BC3B /* UniversitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29602AD72AFC00E4BC3B /* UniversitiesUITests.swift */; };
 		06BE29632AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */; };
+		06BE29722AD72C9A00E4BC3B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29712AD72C9A00E4BC3B /* Client.swift */; };
+		06BE29782AD8A66C00E4BC3B /* UniversitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */; };
+		06BE297B2AD8A82C00E4BC3B /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE297A2AD8A82C00E4BC3B /* University.swift */; };
+		06BE297F2AD9356C00E4BC3B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE297E2AD9356C00E4BC3B /* Enums.swift */; };
+		06BE29822AD992A300E4BC3B /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29812AD992A300E4BC3B /* DictionaryExtensions.swift */; };
+		06BE29842AD992C700E4BC3B /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */; };
+		06BE298D2AD9EB7600E4BC3B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */; };
+		06BE298F2AD9EBDD00E4BC3B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE298E2AD9EBDC00E4BC3B /* WebView.swift */; };
+		06BE29912ADA08CC00E4BC3B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29902ADA08CC00E4BC3B /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		06BE29422AD72AFB00E4BC3B /* Universities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Universities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BE29452AD72AFB00E4BC3B /* UniversitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesApp.swift; sourceTree = "<group>"; };
-		06BE29472AD72AFB00E4BC3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06BE29472AD72AFB00E4BC3B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		06BE29492AD72AFC00E4BC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BE294C2AD72AFC00E4BC3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06BE29522AD72AFC00E4BC3B /* UniversitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,16 @@
 		06BE295C2AD72AFC00E4BC3B /* UniversitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06BE29602AD72AFC00E4BC3B /* UniversitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesUITests.swift; sourceTree = "<group>"; };
 		06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06BE29712AD72C9A00E4BC3B /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		06BE29762AD739B400E4BC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversitiesViewModel.swift; sourceTree = "<group>"; };
+		06BE297A2AD8A82C00E4BC3B /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		06BE297E2AD9356C00E4BC3B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		06BE29812AD992A300E4BC3B /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtensions.swift; sourceTree = "<group>"; };
+		06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		06BE298E2AD9EBDC00E4BC3B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		06BE29902ADA08CC00E4BC3B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +113,14 @@
 		06BE29442AD72AFB00E4BC3B /* Universities */ = {
 			isa = PBXGroup;
 			children = (
+				06BE29762AD739B400E4BC3B /* Info.plist */,
 				06BE29452AD72AFB00E4BC3B /* UniversitiesApp.swift */,
-				06BE29472AD72AFB00E4BC3B /* ContentView.swift */,
 				06BE29492AD72AFC00E4BC3B /* Assets.xcassets */,
 				06BE294B2AD72AFC00E4BC3B /* Preview Content */,
+				06BE297D2AD9354400E4BC3B /* Utilities */,
+				06BE29702AD72C5400E4BC3B /* Network */,
+				06BE29852AD993C100E4BC3B /* Views */,
+				06BE29862AD9A30400E4BC3B /* SubViews */,
 			);
 			path = Universities;
 			sourceTree = "<group>";
@@ -125,6 +148,76 @@
 				06BE29622AD72AFC00E4BC3B /* UniversitiesUITestsLaunchTests.swift */,
 			);
 			path = UniversitiesUITests;
+			sourceTree = "<group>";
+		};
+		06BE29702AD72C5400E4BC3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29792AD8A81A00E4BC3B /* Models */,
+				06BE29712AD72C9A00E4BC3B /* Client.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		06BE29792AD8A81A00E4BC3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06BE297A2AD8A82C00E4BC3B /* University.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06BE297C2AD9345100E4BC3B /* UniversitiesListView */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29472AD72AFB00E4BC3B /* ListView.swift */,
+				06BE29772AD8A66C00E4BC3B /* UniversitiesViewModel.swift */,
+			);
+			path = UniversitiesListView;
+			sourceTree = "<group>";
+		};
+		06BE297D2AD9354400E4BC3B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29802AD9928F00E4BC3B /* Extensions */,
+				06BE297E2AD9356C00E4BC3B /* Enums.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		06BE29802AD9928F00E4BC3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29812AD992A300E4BC3B /* DictionaryExtensions.swift */,
+				06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06BE29852AD993C100E4BC3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BE298B2AD9EB6600E4BC3B /* WebView */,
+				06BE297C2AD9345100E4BC3B /* UniversitiesListView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06BE29862AD9A30400E4BC3B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29902ADA08CC00E4BC3B /* LoadingView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		06BE298B2AD9EB6600E4BC3B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */,
+				06BE298E2AD9EBDC00E4BC3B /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06BE29482AD72AFB00E4BC3B /* ContentView.swift in Sources */,
+				06BE29842AD992C700E4BC3B /* CharacterSetExtensions.swift in Sources */,
+				06BE298D2AD9EB7600E4BC3B /* WebViewController.swift in Sources */,
+				06BE29482AD72AFB00E4BC3B /* ListView.swift in Sources */,
+				06BE29822AD992A300E4BC3B /* DictionaryExtensions.swift in Sources */,
 				06BE29462AD72AFB00E4BC3B /* UniversitiesApp.swift in Sources */,
+				06BE29912ADA08CC00E4BC3B /* LoadingView.swift in Sources */,
+				06BE29782AD8A66C00E4BC3B /* UniversitiesViewModel.swift in Sources */,
+				06BE29722AD72C9A00E4BC3B /* Client.swift in Sources */,
+				06BE297F2AD9356C00E4BC3B /* Enums.swift in Sources */,
+				06BE297B2AD8A82C00E4BC3B /* University.swift in Sources */,
+				06BE298F2AD9EBDD00E4BC3B /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +522,7 @@
 				DEVELOPMENT_TEAM = V3Y6YC43ZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Universities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +552,7 @@
 				DEVELOPMENT_TEAM = V3Y6YC43ZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Universities/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

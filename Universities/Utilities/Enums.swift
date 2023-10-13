@@ -22,6 +22,7 @@ enum Countries: String, CaseIterable {
     case italy = "italy"
     case spain = "spain"
     case portugal = "portugal"
+    case unitedKingdom = "united+kingdom"
     
     func getCountryName() -> String {
         switch self {
@@ -43,6 +44,8 @@ enum Countries: String, CaseIterable {
             return "Spain"
         case .portugal:
             return "Portugal"
+        case .unitedKingdom:
+            return "UK"
         }
     }
 }

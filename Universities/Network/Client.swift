@@ -43,6 +43,9 @@ class Client {
             
             do {
                 let responseObject = try JSONDecoder().decode(expecting, from: data)
+                print("Parameters: \(String(describing: clientModel.parameters?.percentEncoded()))")
+                print("Response Data:")
+                print(String(decoding: data, as: UTF8.self))
                 completion(.success(responseObject))
             } catch {
                 completion(.failure(error))

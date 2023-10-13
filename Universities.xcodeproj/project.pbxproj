@@ -20,6 +20,9 @@
 		06BE297F2AD9356C00E4BC3B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE297E2AD9356C00E4BC3B /* Enums.swift */; };
 		06BE29822AD992A300E4BC3B /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29812AD992A300E4BC3B /* DictionaryExtensions.swift */; };
 		06BE29842AD992C700E4BC3B /* CharacterSetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */; };
+		06BE298D2AD9EB7600E4BC3B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */; };
+		06BE298F2AD9EBDD00E4BC3B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE298E2AD9EBDC00E4BC3B /* WebView.swift */; };
+		06BE29912ADA08CC00E4BC3B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE29902ADA08CC00E4BC3B /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		06BE297E2AD9356C00E4BC3B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		06BE29812AD992A300E4BC3B /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetExtensions.swift; sourceTree = "<group>"; };
+		06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		06BE298E2AD9EBDC00E4BC3B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		06BE29902ADA08CC00E4BC3B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +116,11 @@
 				06BE29762AD739B400E4BC3B /* Info.plist */,
 				06BE29452AD72AFB00E4BC3B /* UniversitiesApp.swift */,
 				06BE29492AD72AFC00E4BC3B /* Assets.xcassets */,
+				06BE294B2AD72AFC00E4BC3B /* Preview Content */,
 				06BE297D2AD9354400E4BC3B /* Utilities */,
 				06BE29702AD72C5400E4BC3B /* Network */,
-				06BE297C2AD9345100E4BC3B /* UniversitiesListView */,
-				06BE294B2AD72AFC00E4BC3B /* Preview Content */,
+				06BE29852AD993C100E4BC3B /* Views */,
+				06BE29862AD9A30400E4BC3B /* SubViews */,
 			);
 			path = Universities;
 			sourceTree = "<group>";
@@ -185,6 +192,32 @@
 				06BE29832AD992C700E4BC3B /* CharacterSetExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06BE29852AD993C100E4BC3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06BE298B2AD9EB6600E4BC3B /* WebView */,
+				06BE297C2AD9345100E4BC3B /* UniversitiesListView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06BE29862AD9A30400E4BC3B /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				06BE29902ADA08CC00E4BC3B /* LoadingView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		06BE298B2AD9EB6600E4BC3B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				06BE298C2AD9EB7600E4BC3B /* WebViewController.swift */,
+				06BE298E2AD9EBDC00E4BC3B /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,13 +351,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				06BE29842AD992C700E4BC3B /* CharacterSetExtensions.swift in Sources */,
+				06BE298D2AD9EB7600E4BC3B /* WebViewController.swift in Sources */,
 				06BE29482AD72AFB00E4BC3B /* ListView.swift in Sources */,
 				06BE29822AD992A300E4BC3B /* DictionaryExtensions.swift in Sources */,
 				06BE29462AD72AFB00E4BC3B /* UniversitiesApp.swift in Sources */,
+				06BE29912ADA08CC00E4BC3B /* LoadingView.swift in Sources */,
 				06BE29782AD8A66C00E4BC3B /* UniversitiesViewModel.swift in Sources */,
 				06BE29722AD72C9A00E4BC3B /* Client.swift in Sources */,
 				06BE297F2AD9356C00E4BC3B /* Enums.swift in Sources */,
 				06BE297B2AD8A82C00E4BC3B /* University.swift in Sources */,
+				06BE298F2AD9EBDD00E4BC3B /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

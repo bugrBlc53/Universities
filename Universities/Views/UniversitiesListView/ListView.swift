@@ -26,12 +26,13 @@ struct ListView: View {
                     .padding(.horizontal)
                     .pickerStyle(.navigationLink)
                     .onChange(of: selectedCountry) { newValue in
+                        self.searchText = ""
                         viewModel.getUniversities(country: newValue)
                     }
                     
                     TextField("Search", text: $searchText)
-                        .onChange(of: searchText) { newValue in
-                            viewModel.getFilteredUniversities(newValue)
+                        .onChange(of: searchText) { searchText in
+                            viewModel.getFilteredUniversities(searchText)
                         }
                         .textFieldStyle(.roundedBorder)
                         .padding(.horizontal)
